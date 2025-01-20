@@ -1,0 +1,91 @@
+@import url("./css-reset.css");
+
+:root {
+  /* colors */
+  --bg-primary: rgba(255, 144, 14, 0.1);
+  --bg-secondary: #ff900e;
+
+  --txt-dark-1: #131313;
+  --txt-dark-2: #424242;
+  --txt-dark-3: #727272;
+  --txt-light: #fff;
+  --txt-accent: #ff900e;
+
+  /* text size */
+  --fs-h1: 4rem;
+  --fs-h2: 2.813rem;
+  --fs-h3: 1.563rem;
+  --fs-p: 1rem;
+  --fs-btn: 1.125rem;
+  --fs-link: 1.25rem;
+
+  /* font weight */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+}
+/* ###### UTILITY CLASSES ###### */
+.h1 {
+  font-size: var(--fs-h1);
+  color: var(--txt-dark-1);
+  font-weight: var(--fw-bold);
+}
+.h2 {
+  font-size: var(--fs-h2);
+  color: var(--txt-dark-1);
+  font-weight: var(--fw-bold);
+}
+.h3 {
+  font-size: var(--fs-h3);
+  color: var(--txt-dark-1);
+  font-weight: var(--fw-semibold);
+}
+.paragraph {
+  font-size: var(--fs-p);
+  color: var(--txt-dark-3);
+}
+.link {
+  font-size: var(--fs-link);
+  color: var(--txt-dark-2);
+  text-decoration: none;
+}
+.btn-primary {
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: var(--txt-light);
+  background-color: var(--bg-secondary);
+  padding: 1.25rem 1.5rem;
+  font-size: var(--fs-btn);
+  font-weight: var(--fw-regular);
+}
+.bg-primary {
+  background-color: var(--bg-primary);
+}
+
+/* Grid */
+.grid {
+  display: grid;
+}
+.grid-col-2 {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+/* Flex */
+.flex {
+  display: flex;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+.flex-center-h {
+  justify-content: center;
+}
+.flex-center-v {
+  align-items: center;
+}
+.flex-col {
+  flex-direction: column;
+}
