@@ -269,6 +269,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    max-width: 90%;
     font-weight: var(--fw-medium);
   }
   .banner__heading {
@@ -283,7 +284,7 @@
     padding: 0.5rem 1.5rem;
   }
   .banner__img {
-    width: 70%;
+    max-width: 90%;
   }
 
   /* CURRICULUM */
