@@ -301,6 +301,9 @@
     gap: 0.875rem;
   }
 
+  .curriculum__card .card__img {
+    max-width: 66%;
+  }
   .curriculum__card .card__heading {
     font-size: 1rem;
   }
