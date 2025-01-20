@@ -6,9 +6,38 @@
     <title>Kids School</title>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body>
-    <header></header>
-    <main></main>
+  <body class="ff-quicksand">
+    <header>
+      <nav class="nav flex flex-center-v">
+        <div class="flex flex-center-v">
+          <img src="./assets/logo.png" alt="school-logo" class="nav__logo" />
+          <span class="nav__brand">School</span>
+        </div>
+        <ul class="nav__list flex">
+          <li class="nav__item"><a href="#" class="nav__link nav__link-orange">Home</a></li>
+          <li class="nav__item"><a href="#" class="nav__link nav__link-blue">About</a></li>
+          <li class="nav__item">
+            <a href="#" class="nav__link nav__link-cyan">Facilities</a>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link nav__link-violate">Admission</a></li>
+        </ul>
+        <div class="nav__btn-container">
+          <button class="nav__btn btn-primary">Contact</button>
+        </div>
+        <div class="nav__hamburger hidden"><img src="./assets/hamburger-menu.png" alt="" /></div>
+      </nav>
+    </header>
+    <main>
+        <section class="banner flex flex-center-v">
+            <div class="banner__contents flex flex-col">
+                <h1 class="banner__heading"><span class="banner__heading-orange">Empowering</span>
+                    students from small age <span class="banner__heading-blue">towards vision</span></h1>
+                <p class="banner__description">With the courage, Confidence, Creativity and Compassion to make their Unique Contribution in a Diverse and Dynamic World.</p>
+                <button class="btn-primary banner__btn">Enroll Now</button>
+            </div>
+            <div class="banner__img"><img src="./assets/hero-kids.png" alt=""></div>
+        </section>
+    </main>
     <footer></footer>
   </body>
 </html>

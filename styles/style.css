@@ -1,23 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("./css-reset.css");
 
 :root {
   /* colors */
-  --bg-primary: rgba(255, 144, 14, 0.1);
-  --bg-secondary: #ff900e;
+  --orange: #fea301;
+  --skyblue: #01acfd;
+  --cyan: #05d4df;
+  --violate: #5d58ef;
 
-  --txt-dark-1: #131313;
-  --txt-dark-2: #424242;
-  --txt-dark-3: #727272;
+  --txt-black: #111;
+  --txt-gray: #808080;
   --txt-light: #fff;
-  --txt-accent: #ff900e;
+
+  --txt-card-orange: #f0aa00;
+  --txt-card-skyblue: #64c8ff;
+  --txt-card-violate: #8700ff;
+
+  --bg-cyan: #3cd8e8;
+  --bg-green: #95b226;
+  --bg-violate: #5d58f0;
 
   /* text size */
-  --fs-h1: 4rem;
-  --fs-h2: 2.813rem;
-  --fs-h3: 1.563rem;
-  --fs-p: 1rem;
-  --fs-btn: 1.125rem;
-  --fs-link: 1.25rem;
+
+  --fs-btn: 1.25rem;
 
   /* font weight */
   --fw-regular: 400;
@@ -25,43 +30,28 @@
   --fw-semibold: 600;
   --fw-bold: 700;
 }
+
+.ff-quicksand {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.ff-raleway {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 /* ###### UTILITY CLASSES ###### */
-.h1 {
-  font-size: var(--fs-h1);
-  color: var(--txt-dark-1);
-  font-weight: var(--fw-bold);
-}
-.h2 {
-  font-size: var(--fs-h2);
-  color: var(--txt-dark-1);
-  font-weight: var(--fw-bold);
-}
-.h3 {
-  font-size: var(--fs-h3);
-  color: var(--txt-dark-1);
-  font-weight: var(--fw-semibold);
-}
-.paragraph {
-  font-size: var(--fs-p);
-  color: var(--txt-dark-3);
-}
-.link {
-  font-size: var(--fs-link);
-  color: var(--txt-dark-2);
-  text-decoration: none;
+.hidden {
+  display: none;
 }
 .btn-primary {
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   cursor: pointer;
   color: var(--txt-light);
-  background-color: var(--bg-secondary);
-  padding: 1.25rem 1.5rem;
   font-size: var(--fs-btn);
-  font-weight: var(--fw-regular);
-}
-.bg-primary {
-  background-color: var(--bg-primary);
 }
 
 /* Grid */
@@ -71,6 +61,9 @@
 .grid-col-2 {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+}
+.grid-col-3 {
+  grid-template-columns: repeat(3, 1fr);
 }
 /* Flex */
 .flex {
@@ -88,4 +81,138 @@
 }
 .flex-col {
   flex-direction: column;
+}
+
+/* HEADER */
+/* NAV */
+.nav {
+  justify-content: space-between;
+  margin: 1.5rem 8.5rem;
+}
+.nav__brand {
+  font-size: 2rem;
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+}
+.nav__list {
+  list-style-type: none;
+  gap: 2rem;
+}
+.nav__link {
+  text-decoration: none;
+  font-weight: var(--fw-medium);
+  font-size: 1.25rem;
+}
+.nav__link-orange {
+  color: var(--orange);
+  font-weight: var(--fw-bold);
+}
+.nav__link-blue {
+  color: var(--skyblue);
+}
+.nav__link-cyan {
+  color: var(--cyan);
+}
+.nav__link-violate {
+  color: var(--violate);
+}
+.nav__btn {
+  background-color: var(--orange);
+  padding: 0.5rem 3rem;
+  font-weight: var(--fw-semibold);
+}
+
+
+/* Banner */
+.banner {
+  justify-content: space-between;
+  margin: 1.5rem 8.5rem;
+}
+.banner__contents{
+  max-width: 50%;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.banner__heading{
+  font-size: 3.5rem;
+  color: var(--txt-black);
+  font-weight: var(--fw-bold);
+}
+.banner__heading-orange{
+  color: var(--orange);
+}
+.banner__heading-blue{
+  color: var(--skyblue);
+}
+.banner__description{
+  color: var(--txt-black);
+  font-size: 1.25rem;
+} 
+.banner__btn{
+  background-color: var(--txt-black);
+  font-weight: var(--fw-bold);
+  padding: .875rem 3rem;
+}
+
+.banner__img{
+  max:width: 50%;
+}
+
+.banner__img>img{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+  .nav__brand,
+  .nav__list,
+  .nav__btn {
+    display: none;
+  }
+  .nav__hamburger {
+    display: block;
+    max-width: 50px;
+  }
+  .nav {
+    margin: 0;
+    padding: 1rem;
+    border-bottom: 1px solid var(--orange);
+  }
+
+  /* banner */
+  .banner{
+    flex-direction: column-reverse;
+    margin: 0;
+    padding: 1rem;
+  }
+  .banner__contents{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 100%;
+    gap: 0.75rem;
+  }
+  .banner__heading{
+    font-size: 2rem;
+  }
+  .banner__description{
+    font-size: 0.875rem;
+    font-weight: var(--fw-medium);
+  }
+  .banner__btn{
+    font-size: 1rem;
+    padding: .5rem 1.5rem;
+}
+  .banner__img{
+    width: 70%;
+  }
 }
