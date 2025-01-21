@@ -119,9 +119,7 @@
   border: 2px solid var(--orange);
   color: var(--orange);
   background-color: transparent;
-  transition:
-    background-color 0.2s,
-    color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 /* Marquee */
@@ -177,9 +175,7 @@
   border: 2px solid var(--txt-gray);
   color: var(--txt-black);
   background-color: transparent;
-  transition:
-    background-color 0.2s,
-    color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
 }
 .banner__img {
   max-width: 50%;
@@ -221,15 +217,18 @@
 }
 .curriculum__card-blue {
   border: 1px solid #def5ff;
-  background: linear-gradient(180deg, #def5ff 0%, rgba(255, 255, 255, 0) 40%), #fff;
+  background: linear-gradient(180deg, #def5ff 0%, rgba(255, 255, 255, 0) 40%),
+    #fff;
 }
 .curriculum__card-orange {
   border: 1px solid #fff4dc;
-  background: linear-gradient(180deg, #fff4dc 0%, rgba(255, 255, 255, 0) 40%), #fff;
+  background: linear-gradient(180deg, #fff4dc 0%, rgba(255, 255, 255, 0) 40%),
+    #fff;
 }
 .curriculum__card-violate {
   border: 1px solid #f2e8ff;
-  background: linear-gradient(180deg, #eee1ff 0%, rgba(255, 255, 255, 0) 40%), #fff;
+  background: linear-gradient(180deg, #eee1ff 0%, rgba(255, 255, 255, 0) 40%),
+    #fff;
 }
 
 .curriculum__card .card__heading {
@@ -277,7 +276,11 @@
 /* OUR STORIES */
 .stories {
   background-image: url("../assets/bg.png");
-  background: linear-gradient(0deg, rgba(254, 161, 1, 0.2) 0%, rgba(255, 255, 255, 0.5) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(254, 161, 1, 0.2) 0%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
   align-items: center;
   gap: 3.5rem;
 }
@@ -296,9 +299,7 @@
   border: 2px solid var(--txt-gray);
   color: var(--txt-black);
   background-color: transparent;
-  transition:
-    background-color 0.2s,
-    color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .stories__container {
@@ -339,6 +340,7 @@
   font-size: 0.95rem;
   font-weight: var(--fw-bold);
   padding: 2.5rem;
+  line-height: 1.5;
 }
 .story__card-1 .story__heading {
   font-size: 1.5rem;
