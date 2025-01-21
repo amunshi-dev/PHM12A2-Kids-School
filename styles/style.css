@@ -78,6 +78,11 @@
 }
 
 /* HEADER */
+
+.body {
+  max-width: 100rem;
+  margin: 0 auto;
+}
 /* NAV */
 .nav {
   justify-content: space-between;
